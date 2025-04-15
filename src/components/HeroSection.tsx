@@ -60,8 +60,8 @@ const HeroSection = () => {
         className="absolute inset-0 bg-cover bg-center z-0"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1582281171754-405cb2a75fb1?w=1200&q=80)",
-          opacity: 0.3,
+            "url(https://images.unsplash.com/photo-1519638399535-1b036603ac77?w=1200&q=80)",
+          opacity: 0.2,
         }}
       />
 
