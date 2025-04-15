@@ -8,7 +8,7 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => {
   return (
     <div className={`flex flex-col items-center ${className}`}>
       <img
-        src="https://storage.googleapis.com/tempo-public-assets/alfageo-logo.png"
+        src="https://ibb.co/RTgrgpDN"
         alt="ALFAGEO Logo"
         className="h-12 md:h-16 w-auto"
       />
