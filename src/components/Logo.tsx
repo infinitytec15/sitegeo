@@ -9,7 +9,6 @@ const Logo: React.FC<LogoProps> = ({ className = "" }) => {
     <div className={`flex flex-col items-center ${className}`}>
       <img
         src="https://ibb.co/RTgrgpDN"
-        alt="ALFAGEO Logo"
         className="h-12 md:h-16 w-auto"
       />
     </div>
