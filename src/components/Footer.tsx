@@ -11,12 +11,14 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f2a38] text-white pt-16 pb-8">
+    <footer className="bg-[#1f2a38] text-white pt-10 sm:pt-12 md:pt-16 pb-8">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
           {/* Column 1: Contact Info */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Fale Conosco</h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
+              Fale Conosco
+            </h3>
             <ul className="space-y-4">
               <li className="flex items-start">
                 <Phone size={20} className="mr-3 mt-1 flex-shrink-0" />
@@ -39,7 +41,9 @@ const Footer = () => {
 
           {/* Column 2: Useful Links */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Links Úteis</h3>
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
+              Links Úteis
+            </h3>
             <ul className="space-y-3">
               <li>
                 <a
@@ -91,23 +95,25 @@ const Footer = () => {
 
           {/* Column 3: Social Media */}
           <div>
-            <h3 className="text-xl font-semibold mb-6">Redes Sociais</h3>
-            <div className="flex space-x-4 mb-8">
+            <h3 className="text-lg sm:text-xl font-semibold mb-4 sm:mb-6">
+              Redes Sociais
+            </h3>
+            <div className="flex space-x-3 sm:space-x-4 mb-6 sm:mb-8">
               <a
                 href="#"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
+                className="bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-full transition-colors"
               >
                 <Facebook size={20} />
               </a>
               <a
                 href="#"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
+                className="bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-full transition-colors"
               >
                 <Instagram size={20} />
               </a>
               <a
                 href="#"
-                className="bg-white/10 hover:bg-white/20 p-3 rounded-full transition-colors"
+                className="bg-white/10 hover:bg-white/20 p-2 sm:p-3 rounded-full transition-colors"
               >
                 <Linkedin size={20} />
               </a>

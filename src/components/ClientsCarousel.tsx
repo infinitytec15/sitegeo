@@ -60,7 +60,7 @@ const ClientsCarousel = () => {
   }, [api]);
 
   return (
-    <section id="clientes" className="py-20 bg-white">
+    <section id="clientes" className="py-12 sm:py-16 md:py-20 bg-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
@@ -68,7 +68,7 @@ const ClientsCarousel = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold text-[#1f2a38] mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f2a38] mb-4"
           >
             Nossos Clientes
           </motion.h2>
@@ -83,7 +83,7 @@ const ClientsCarousel = () => {
           </motion.p>
         </div>
 
-        <div className="relative max-w-5xl mx-auto">
+        <div className="relative max-w-5xl mx-auto px-2 sm:px-4">
           <Carousel
             opts={{
               align: "start",
@@ -94,13 +94,16 @@ const ClientsCarousel = () => {
           >
             <CarouselContent>
               {clients.map((client, index) => (
-                <CarouselItem key={index} className="md:basis-1/3 lg:basis-1/4">
-                  <div className="p-4">
-                    <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-6 h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-300">
+                <CarouselItem
+                  key={index}
+                  className="basis-1/2 sm:basis-1/3 md:basis-1/3 lg:basis-1/4"
+                >
+                  <div className="p-2 sm:p-4">
+                    <div className="rounded-lg bg-white border border-gray-200 shadow-sm p-3 sm:p-6 h-24 sm:h-32 flex items-center justify-center hover:shadow-md transition-shadow duration-300">
                       <img
                         src={client.logo}
                         alt={client.name}
-                        className="max-h-16 max-w-full"
+                        className="max-h-12 sm:max-h-16 max-w-full"
                       />
                     </div>
                   </div>
