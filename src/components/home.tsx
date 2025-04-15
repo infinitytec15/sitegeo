@@ -47,7 +47,7 @@ function Home() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen bg-white">
+    <div className="w-full min-h-screen bg-white overflow-x-hidden">
       <Header />
       <HeroSection />
       <ServicesSection />

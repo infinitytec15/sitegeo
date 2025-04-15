@@ -11,7 +11,7 @@ import Logo from "./Logo";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1f2a38] text-white pt-10 sm:pt-12 md:pt-16 pb-8">
+    <footer className="bg-[#1f2a38] text-white pt-8 sm:pt-10 md:pt-12 pb-6">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 sm:gap-10">
           {/* Column 1: Contact Info */}
