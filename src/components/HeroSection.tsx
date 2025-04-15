@@ -66,7 +66,7 @@ const HeroSection = () => {
       />
 
       {/* 3D Globe */}
-      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[500px] h-[500px] md:w-[600px] md:h-[600px] lg:w-[700px] lg:h-[700px] z-5 opacity-70 hidden md:block">
+      <div className="absolute right-0 top-1/2 transform -translate-y-1/2 w-[400px] h-[400px] md:w-[500px] md:h-[500px] lg:w-[600px] lg:h-[600px] xl:w-[700px] xl:h-[700px] z-5 opacity-70 hidden md:block">
         {Canvas ? (
           <Canvas camera={{ position: [0, 0, 5], fov: 45 }}>
             <ambientLight intensity={0.5} />
@@ -89,24 +89,24 @@ const HeroSection = () => {
         )}
       </div>
 
-      <div className="container mx-auto px-4 z-20 flex flex-col lg:flex-row items-center justify-between">
+      <div className="container mx-auto px-4 sm:px-6 z-20 flex flex-col lg:flex-row items-center justify-between pt-16 md:pt-20 lg:pt-0">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
           className="max-w-xl lg:max-w-2xl lg:pr-8 mb-10 lg:mb-0"
         >
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4 md:mb-6">
             Soluções em Geotecnologia e Engenharia
           </h1>
-          <p className="text-xl text-white/90 mb-8">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-6 md:mb-8">
             A ALFAGEO oferece serviços especializados em georreferenciamento,
             regularização fundiária, aerolevantamento com drone e projetos de
             engenharia civil, com excelência e tecnologia de ponta.
           </p>
           <Button
             onClick={contactWhatsApp}
-            className="bg-white text-[#004b6b] hover:bg-gray-100 font-medium text-lg px-8 py-6 rounded-md"
+            className="bg-white text-[#004b6b] hover:bg-gray-100 font-medium text-base sm:text-lg px-6 py-4 sm:px-8 sm:py-6 rounded-md w-full sm:w-auto"
           >
             Solicite um Orçamento
           </Button>

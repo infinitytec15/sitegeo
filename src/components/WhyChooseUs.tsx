@@ -12,7 +12,10 @@ const WhyChooseUs = () => {
   ];
 
   return (
-    <section id="porque-escolher" className="py-20 bg-[#1f2a38] text-white">
+    <section
+      id="porque-escolher"
+      className="py-12 sm:py-16 md:py-20 bg-[#1f2a38] text-white"
+    >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2
@@ -20,7 +23,7 @@ const WhyChooseUs = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-3xl md:text-4xl font-bold mb-4"
+            className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4"
           >
             Por Que Nos Escolher?
           </motion.h2>
@@ -36,7 +39,7 @@ const WhyChooseUs = () => {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6 max-w-4xl mx-auto px-2 sm:px-4">
           {reasons.map((reason, index) => (
             <motion.div
               key={index}
@@ -44,10 +47,10 @@ const WhyChooseUs = () => {
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               viewport={{ once: true }}
-              className="flex items-start space-x-3"
+              className="flex items-start space-x-2 sm:space-x-3"
             >
               <CheckCircle2 className="text-green-400 flex-shrink-0 mt-1" />
-              <p className="text-lg">{reason}</p>
+              <p className="text-base sm:text-lg">{reason}</p>
             </motion.div>
           ))}
         </div>

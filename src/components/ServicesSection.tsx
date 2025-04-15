@@ -80,7 +80,7 @@ const ServicesSection = () => {
         ))}
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
@@ -88,7 +88,7 @@ const ServicesSection = () => {
           transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-[#1f2a38] mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1f2a38] mb-3 md:mb-4">
             Nossos Serviços
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
@@ -97,7 +97,7 @@ const ServicesSection = () => {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
           {services.map((service, index) => (
             <motion.div
               key={index}

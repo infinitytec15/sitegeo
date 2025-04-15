@@ -32,12 +32,12 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "bg-white shadow-md py-2" : "bg-transparent py-4"}`}
     >
-      <div className="container mx-auto px-4 flex justify-between items-center">
-        <Logo className="z-50" />
+      <div className="container mx-auto px-4 sm:px-6 flex justify-between items-center">
+        <Logo className="z-50 h-10 w-auto" />
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center space-x-8">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-3 lg:space-x-6">
             <li>
               <button
                 onClick={() => scrollToSection("inicio")}
@@ -81,7 +81,7 @@ const Header = () => {
           </ul>
           <Button
             onClick={contactWhatsApp}
-            className="bg-[#004b6b] hover:bg-[#003a54] text-white rounded-md"
+            className="bg-[#004b6b] hover:bg-[#003a54] text-white rounded-md text-sm lg:text-base px-3 py-2 lg:px-4 lg:py-2"
           >
             Entre em Contato
           </Button>
